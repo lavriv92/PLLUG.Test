@@ -1,0 +1,11 @@
+{% extends "layout.html" %}
+
+{% block main %}
+<h1>Test</h1>
+
+
+{% for student in data %}
+<p>{{ student.first_name }} {{ student.last_name }}</p><br />
+{% endfor %}
+
+{% endblock %}

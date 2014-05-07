@@ -8,4 +8,12 @@
 <p>{{ student.first_name }} {{ student.last_name }}</p><br />
 {% endfor %}
 
+
+<h1>Form</h1>
+
+<form method="post">
+{% csrf_token %}	
+{{ form }}
+<input type="submit" />
+</form>
 {% endblock %}
